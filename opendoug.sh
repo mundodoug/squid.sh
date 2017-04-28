@@ -222,7 +222,6 @@ else
 	if [[ "$OS" = 'debian' ]]; then
 		apt-get upgrade
 		apt-get install openvpn iptables openssl ca-certificates -y
-	else
 	        # Else, the distro is Fedora
 		dnf install epel-release -y
 		dnf install openvpn iptables openssl wget ca-certificates -y
