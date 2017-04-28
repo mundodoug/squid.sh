@@ -223,10 +223,6 @@ else
 		apt-get upgrade
 		apt-get install openvpn iptables openssl ca-certificates -y
 	else
-		# Else, the distro is CentOS
-		yum install epel-release -y
-		yum install openvpn iptables openssl wget ca-certificates -y
-	else
 	        # Else, the distro is Fedora
 		dnf install epel-release -y
 		dnf install openvpn iptables openssl wget ca-certificates -y
