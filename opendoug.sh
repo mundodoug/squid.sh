@@ -175,8 +175,11 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 	done
 else
 	clear
-	echo 'Bem vindo ao instalador OpenVPN "@Guilhermevps" installer'
-	echo ""
+	echo "**************************************"
+	echo "OpenVPN Multilogin Criado por @Dougssh"
+	echo "**************************************"
+	echo "*************Entre no canal @MundoDoug" 
+	echo "**************************************"
 	# OpenVPN instalador e criação do primeiro usuario
 	echo "Responda as perguntas para iniciar a instalação"
 	echo "Responda corretamente"
@@ -199,7 +202,7 @@ else
 	esac
 	echo ""
 	echo "Qual porta você deseja usar ?"
-	read -p "Port: " -e -i 1194 PORT
+	read -p "Port: " -e -i 443 PORT
 	echo ""
 	echo "Qual DNS você deseja usar ?"
 	echo "   1) Sistema(Recomendado)"
@@ -223,6 +226,10 @@ else
 		# Else, the distro is CentOS
 		yum install epel-release -y
 		yum install openvpn iptables openssl wget ca-certificates -y
+	else
+	        # Else, the distro is Fedora
+		dnf install epel-release -y
+		dnf install openvpn iptables openssl wget ca-certificates -y
 	fi
 	# An old version of easy-rsa was available by default in some openvpn packages
 	if [[ -d /etc/openvpn/easy-rsa/ ]]; then
