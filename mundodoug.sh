@@ -46,7 +46,6 @@ echo ""
 wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
 chmod u+x opendoug.sh
 echo " "
-clear
 echo "Para utilizar, use o comando ./opendoug.sh"
 echo " "
 echo " "
