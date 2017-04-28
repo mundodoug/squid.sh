@@ -46,6 +46,13 @@ cd
 wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/firewall.sh
 chmod u+x firewall.sh
 ./firewall.sh
+echo " "
+cd
+clear
+wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py && chmod u+x speedtest.py
+echo " "
+echo " para utilizar o speedtest, use o comando ./speedtest.py
+echo " "
 echo "Para utilizar o Openvpn Multilogin, use o comando ./opendoug.sh"
 echo " "
 echo "Para utilizar o Openvpn Unilogin, utilize o comando bash oepnvivo.sh"
