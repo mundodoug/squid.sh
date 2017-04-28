@@ -222,9 +222,10 @@ else
 	if [[ "$OS" = 'debian' ]]; then
 		apt-get upgrade
 		apt-get install openvpn iptables openssl ca-certificates -y
-	        # Else, the distro is Fedora
-		dnf install epel-release -y
-		dnf install openvpn iptables openssl wget ca-certificates -y
+	        else
+		# Else, the distro is CentOS
+		yum install epel-release -y
+		yum install openvpn iptables openssl wget ca-certificates -y
 	fi
 	# An old version of easy-rsa was available by default in some openvpn packages
 	if [[ -d /etc/openvpn/easy-rsa/ ]]; then
