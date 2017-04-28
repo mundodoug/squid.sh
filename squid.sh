@@ -1,11 +1,10 @@
 #!/bin/bash
-echo "                                          "
 echo "******************************************"
 echo "*** Script Oficial do Canal @MundoDoug ***"
 echo "******************************************"
 echo  "*****************Feito por @Dougssh******"
-echo "                                          "                                          
-echo "                                          "
+echo                                
+echo
 echo -e "\033[1;31mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
 read -p ": " ip
