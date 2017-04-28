@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "******************************************"
-echo "*** Script Oficial do Canal @MundoDoug ***"
-echo "******************************************"
-echo "*****************Feito por @Dougssh*******"
+echo "=========================================="
+echo "=== Script Oficial do Canal @MundoDoug ==="
+echo "=========================================="
+echo "================ Feito por @Dougssh ======"
 echo "          "
 echo "          "
 echo -e "\033[1;31mPara a instalação ser correta é preciso o ip.
@@ -50,15 +50,15 @@ chmod u+x firewall.sh
 ./firewall.sh
 echo " "
 cd
-clear
+clear 
 echo "====================================================================="
-echo "Para utilizar o Openvpn Multilogin, use o comando ./opendoug.sh"
+echo "============ Criado por @Dougssh do canal @MundoDoug ================"
 echo "====================================================================="
 echo "Para utilizar o Openvpn Unilogin, utilize o comando bash oepnvivo.sh "
 echo "====================================================================="
-echo "Criado por @Dougssh do canal @MundoDoug"
+echo "Para utilizar o Openvpn Multilogin, use o comando ./opendoug.sh"
 echo "====================================================================="
 echo "Não me quibe, pois sou leigo e consegui criar meu próprio script"
 echo "====================================================================="
-echo "Entre no meu canal e seja bem vindo t.me/MundoDoug"
+echo "====== Entre no meu canal e seja bem vindo t.me/MundoDoug ==========="
 echo "====================================================================="
