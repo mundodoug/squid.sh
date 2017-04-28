@@ -51,9 +51,9 @@ chmod u+x firewall.sh
 echo " "
 cd
 clear
-wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py && chmod u+x speedtest.py
+wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py && chmod u+x speedtest-cli
 echo " "
-echo " para utilizar o speedtest, use o comando ./speedtest.py
+echo " para utilizar o speedtest, use o comando ./speedtest-cli
 echo " "
 echo "Para utilizar o Openvpn Multilogin, use o comando ./opendoug.sh"
 echo " "
