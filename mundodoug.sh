@@ -25,9 +25,6 @@ dnf install squid -y
 dnf install nano -y
 dnf install python -y
 dnf install iptables -y
-wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/firewall.sh
-chmod u+x firewall.sh
-./firewall.sh
 rm /etc/squid/squid.conf
 clear
 cd /etc/squid
@@ -43,6 +40,10 @@ echo ""
 wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
 chmod u+x opendoug.sh
 echo " "
+cd 
+wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/firewall.sh
+chmod u+x firewall.sh
+./firewall.sh
 echo "Para utilizar o Openvpn Multilogin, use o comando ./opendoug.sh"
 echo " "
 echo " "
