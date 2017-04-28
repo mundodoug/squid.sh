@@ -46,7 +46,7 @@ echo ""
 wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
 chmod u+x opendoug.sh
 echo " "
-echo "Para utilizar, use o comando ./opendoug.sh"
+echo "Para utilizar o Openvpn Multilogin, use o comando ./opendoug.sh"
 echo " "
 echo " "
 echo "Criado por @Dougssh do canal @MundoDoug"
