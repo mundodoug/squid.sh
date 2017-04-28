@@ -34,6 +34,8 @@ rm /etc/squid/squid.conf
 cd /etc/squid
 wget https://pastebin.com/raw/124vStHp -O squid.conf && wget http://pastebin.com/raw/UFJ7RbDN -O pa$
 service squid restart
+echo " "
+echo " "
 echo "Aguarde mais um momento para criar um arquivo openvpn"
 echo " "
 echo " "
