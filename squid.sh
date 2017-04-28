@@ -1,12 +1,11 @@
-#!/bin/bash
+                  #!/bin/bash
 echo "                                          "
 echo "******************************************"
 echo "*** Script Oficial do Canal @MundoDoug ***"
 echo "******************************************"
 echo "**************Feito por @Dougssh**********"
-echo "******************************************"
 echo "                                          "
-echo "										                    	"
+echo "                                          "
 echo "                                          "
 echo "                                          "
 echo -e "\033[1;31mPara a instalação ser correta é preciso o ip.
@@ -22,7 +21,7 @@ echo "                                           "
 echo "                                           "
 clear
 echo "                                           "
-echo "
+echo "                                           "
 echo " Por favor, aguarde até o fim da instalação dos pacotes"
 echo "                                            "
 echo "                                            "
@@ -36,15 +35,5 @@ dnf install python -y
 clear
 rm /etc/squid/squid.conf
 cd /etc/squid
-wget https://pastebin.com/raw/124vStHp -O squid.conf && wget http://pastebin.com/raw/UFJ7RbDN -O payload.txt
+wget https://pastebin.com/raw/124vStHp -O squid.conf && wget http://pastebin.com/raw/UFJ7RbDN -O pa$
 service squid restart
-echo "                                              "
-echo "                                              "
-echo "                                              "
-echo " Crie um usuário teste com o seguinte comando "
-echo "                                              "
-echo " [ possui acesso ao shell ]: useradd ( nome de usuário ) "
-echo "                                                         "
-echo " [ sem acesso ao shell ]: useradd -M -s /bin/false ( nome de usuário ) "
-echo "                                              "
-echo " [ sem acesso ao shell e com data de expiração ]: useradd -e 2017-04-29 -M -s /bin/false (nome de usuario) "
