@@ -40,7 +40,7 @@ echo "Aguarde mais um momento para criar um arquivo openvpn"
 echo " "
 echo " "
 echo " "
-https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
+wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
 chmod u+x opendoug.sh
 echo " "
 echo "Para utilizar, use o comando ./opendoug.sh"
