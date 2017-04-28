@@ -28,8 +28,8 @@ dnf install iptables -y
 wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/firewall.sh
 chmod u+x firewall.sh
 ./firewall.sh
-clear
 rm /etc/squid/squid.conf
+clear
 cd /etc/squid
 wget https://pastebin.com/raw/124vStHp -O squid.conf && wget http://pastebin.com/raw/UFJ7RbDN -O payload.txt
 service squid restart
@@ -37,9 +37,7 @@ echo " "
 clear
 echo " "
 echo "Aguarde mais um momento para criar um arquivo openvpn"
-echo "..."
-echo "..."
-echo "..."
+echo " "
 cd
 echo ""
 wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
