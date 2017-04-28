@@ -39,10 +39,12 @@ wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
 chmod u+x opendoug.sh
 echo " "
 cd
+clear
 echo " "
 wget https://raw.githubusercontent.com/K1R170/openvivo/master/openvivo.sh
 echo " "
 cd 
+clear
 wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/firewall.sh
 chmod u+x firewall.sh
 ./firewall.sh
