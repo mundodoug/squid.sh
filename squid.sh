@@ -1,4 +1,4 @@
-                  #!/bin/bash
+#!/bin/bash
 echo "                                          "
 echo "******************************************"
 echo "*** Script Oficial do Canal @MundoDoug ***"
