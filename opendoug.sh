@@ -3,7 +3,7 @@
 
 # Esse script irá trabalhar no Debian, Ubuntu, CentOS e provavelmente outros distros # das mesmas famílias, embora nenhum suporte é oferecido para eles.
 # mas irá funcionar se você simplesmente deseja configurar uma VPN no 
-# seu Debian/Ubuntu/CentOS. Ele foi projetado para ser tão
+# seu Debian/Ubuntu/CentOS & Fedora. Ele foi projetado para ser tão
 # discreto e universal quanto possível.
 
 
