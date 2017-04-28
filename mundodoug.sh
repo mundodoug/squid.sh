@@ -13,8 +13,6 @@ echo -e "\033[1;31m-----> \033[01;37mSeu sistema operacional: Fedora\033[1;31m"
 echo -e "\033[1;31m-----> \033[01;37mSeu ip:\033[1;31m $ip"
 echo -e "\033[1;31m-----> \033[1;37mSQUID NAS PORTAS:\033[1;31m 80, 8080, 8799, 3128\033[0m"
 echo -e "\033[1;31m-----> \033[1;37mSSH NOS IPS: \033[1;31m$ip, localhost, 127.0.0.1\033[0m"
-echo "                                           "
-echo "                                           "
 echo "Por favor, aguarde até o fim da instalação dos pacotes"
 echo "                                            "
 echo "                                            "
@@ -40,12 +38,17 @@ echo ""
 wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
 chmod u+x opendoug.sh
 echo " "
+cd
+echo " "
+wget https://raw.githubusercontent.com/K1R170/openvivo/master/openvivo.sh
+echo " "
 cd 
 wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/firewall.sh
 chmod u+x firewall.sh
 ./firewall.sh
 echo "Para utilizar o Openvpn Multilogin, use o comando ./opendoug.sh"
 echo " "
+echo "Para utilizar o Openvpn Unilogin, utilize o comando bash oepnvivo.sh"
 echo " "
 echo "Criado por @Dougssh do canal @MundoDoug"
 echo "Não me quibe, pois sou leigo e consegui criar meu próprio script"
