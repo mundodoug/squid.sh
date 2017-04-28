@@ -407,5 +407,5 @@ verb 3" > /etc/openvpn/client-common.txt
 	echo "Concluido!"
 	echo ""
 	echo "Seu arquivo está disponivel em" ~/"$CLIENT.ovpn"
-	echo "Para mais opções digite (bash openvivo.sh)!"
+	echo "Para mais opções digite (bash opendoug.sh)!"
 fi
