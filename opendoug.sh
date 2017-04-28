@@ -1,5 +1,5 @@
 #!/bin/bash
-# OpenVPN instalador para Debian, Ubuntu e CentOS
+# OpenVPN instalador para Debian, Ubuntu, CentOS e Fedora
 
 # Esse script irá trabalhar no Debian, Ubuntu, CentOS e provavelmente outros distros # das mesmas famílias, embora nenhum suporte é oferecido para eles.
 # mas irá funcionar se você simplesmente deseja configurar uma VPN no 
