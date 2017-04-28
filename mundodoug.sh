@@ -15,20 +15,19 @@ echo -e "\033[1;31m-----> \033[1;37mSQUID NAS PORTAS:\033[1;31m 80, 8080, 8799, 
 echo -e "\033[1;31m-----> \033[1;37mSSH NOS IPS: \033[1;31m$ip, localhost, 127.0.0.1\033[0m"
 echo "                                           "
 echo "                                           "
-echo "                                           "
-clear
-echo "                                           "
-echo "                                           "
 echo "Por favor, aguarde até o fim da instalação dos pacotes"
 echo "                                            "
 echo "                                            "
 echo "                                            "
-clear
 dnf update -y
 dnf install wget -y
 dnf install squid -y
 dnf install nano -y
 dnf install python -y
+dnf install iptables -y
+wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/firewall.sh
+chmod u+x firewall.sh
+./firewall.sh
 clear
 rm /etc/squid/squid.conf
 cd /etc/squid
