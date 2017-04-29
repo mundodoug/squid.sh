@@ -175,11 +175,11 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 	done
 else
 	clear
-	echo "**************************************"
+	echo "======================================"
 	echo "OpenVPN Multilogin Criado por @Dougssh"
-	echo "**************************************"
-	echo "*************Entre no canal @MundoDoug" 
-	echo "**************************************"
+	echo "======================================"
+	echo "============ Entre no canal @MundoDoug" 
+	echo "======================================"
 	# OpenVPN instalador e criação do primeiro usuario
 	echo "Responda as perguntas para iniciar a instalação"
 	echo "Responda corretamente"
