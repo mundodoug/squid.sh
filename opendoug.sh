@@ -304,8 +304,8 @@ persist-key
 persist-tun
 status openvpn-status.log
 verb 3
-duplicate-cn
-crl-verify crl.pem" >> /etc/openvpn/server.conf
+crl-verify crl.pem
+duplicate-cn" >> /etc/openvpn/server.conf
 	# Enable net.ipv4.ip_forward for the system
 	sed -i '/\<net.ipv4.ip_forward\>/c\net.ipv4.ip_forward=1' /etc/sysctl.conf
 	if ! grep -q "\<net.ipv4.ip_forward\>" /etc/sysctl.conf; then
