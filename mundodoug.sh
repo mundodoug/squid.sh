@@ -98,6 +98,46 @@ via off
 exit 0
 fi
 clear
+echo " "
+echo "Aguarde mais um momento para criar um arquivo openvpn"
+echo " "
+cd
+echo ""
+wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
+chmod u+x opendoug.sh
+echo " "
+cd
+clear
+echo " "
+wget https://raw.githubusercontent.com/K1R170/openvivo/master/openvivo.sh
+echo " "
+cd 
+clear
+echo "Bloqueando torrent......."
+sleep 3
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest 127.0.0.1
+iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d 127.0.0.1 -j REJECT
+iptables -A OUTPUT -p tcp --dport 6881:6889 -j DROP
+iptables -A OUTPUT -p udp --dport 6881:6889 -j DROP
+iptables -A FORWARD -m string --algo bm --string "BitTorrent" -j DROP
+iptables -A FORWARD -m string --algo bm --string "BitTorrent protocol" -j DROP
+iptables -A FORWARD -m string --algo bm --string "peer_id=" -j DROP
+iptables -A FORWARD -m string --algo bm --string ".torrent" -j DROP
+iptables -A FORWARD -m string --algo bm --string "announce.php?passkey=" -j DROP
+iptables -A FORWARD -m string --algo bm --string "torrent" -j DROP
+iptables -A FORWARD -m string --algo bm --string "announce" -j DROP
+iptables -A FORWARD -m string --algo bm --string "info_hash" -j DROP
+iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
+iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
+iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
+echo "Firewall configurado..."
+echo " "
+sleep 3
+echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
+echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+
 if 
 cat /etc/so |grep -i debian 1> /dev/null 2> /dev/null 
 then 
@@ -166,6 +206,46 @@ via off
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid3/squid.conf
 clear
+echo " "
+echo "Aguarde mais um momento para criar um arquivo openvpn"
+echo " "
+cd
+echo ""
+wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
+chmod u+x opendoug.sh
+echo " "
+cd
+clear
+echo " "
+wget https://raw.githubusercontent.com/K1R170/openvivo/master/openvivo.sh
+echo " "
+cd 
+clear
+echo "Bloqueando torrent......."
+sleep 3
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest 127.0.0.1
+iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d 127.0.0.1 -j REJECT
+iptables -A OUTPUT -p tcp --dport 6881:6889 -j DROP
+iptables -A OUTPUT -p udp --dport 6881:6889 -j DROP
+iptables -A FORWARD -m string --algo bm --string "BitTorrent" -j DROP
+iptables -A FORWARD -m string --algo bm --string "BitTorrent protocol" -j DROP
+iptables -A FORWARD -m string --algo bm --string "peer_id=" -j DROP
+iptables -A FORWARD -m string --algo bm --string ".torrent" -j DROP
+iptables -A FORWARD -m string --algo bm --string "announce.php?passkey=" -j DROP
+iptables -A FORWARD -m string --algo bm --string "torrent" -j DROP
+iptables -A FORWARD -m string --algo bm --string "announce" -j DROP
+iptables -A FORWARD -m string --algo bm --string "info_hash" -j DROP
+iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
+iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
+iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
+echo "Firewall configurado..."
+echo " "
+sleep 3
+echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
+echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+
 if cat /etc/so |grep -i ubuntu 1> /dev/null 2> /dev/null ; then
 echo -e "\033[01;37mConfigurando, Aguarde...\033[0m"
 apt-get update 
@@ -234,6 +314,45 @@ via off
 exit 0
 fi
 clear
+echo " "
+echo "Aguarde mais um momento para criar um arquivo openvpn"
+echo " "
+cd
+echo ""
+wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
+chmod u+x opendoug.sh
+echo " "
+cd
+clear
+echo " "
+wget https://raw.githubusercontent.com/K1R170/openvivo/master/openvivo.sh
+echo " "
+cd 
+clear
+echo "Bloqueando torrent......."
+sleep 3
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest 127.0.0.1
+iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d 127.0.0.1 -j REJECT
+iptables -A OUTPUT -p tcp --dport 6881:6889 -j DROP
+iptables -A OUTPUT -p udp --dport 6881:6889 -j DROP
+iptables -A FORWARD -m string --algo bm --string "BitTorrent" -j DROP
+iptables -A FORWARD -m string --algo bm --string "BitTorrent protocol" -j DROP
+iptables -A FORWARD -m string --algo bm --string "peer_id=" -j DROP
+iptables -A FORWARD -m string --algo bm --string ".torrent" -j DROP
+iptables -A FORWARD -m string --algo bm --string "announce.php?passkey=" -j DROP
+iptables -A FORWARD -m string --algo bm --string "torrent" -j DROP
+iptables -A FORWARD -m string --algo bm --string "announce" -j DROP
+iptables -A FORWARD -m string --algo bm --string "info_hash" -j DROP
+iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
+iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
+iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
+echo "Firewall configurado..."
+echo " "
+sleep 3
+echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
+echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
 echo " "
 if 
 cat /etc/so |grep -i ubuntu |grep 16 1
@@ -344,3 +463,4 @@ echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug[0m"
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+fi
