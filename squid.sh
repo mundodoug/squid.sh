@@ -7,7 +7,14 @@ echo
 echo
 echo -e "\033[1;31mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
-read -p ": " ip
+IP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
+if [[ "$IP" = "" ]]; then
+		IP=$(wget -4qO- "http://whatismyip.akamai.com/")
+fi
+
+if [[ -e /etc/openvpn/server.conf ]]; then
+	while :
+	do
 clear
 echo -e "\033[1;31m-----> \033[01;37mSeu sistema operacional: Fedora\033[1;31m"
 echo -e "\033[1;31m-----> \033[01;37mSeu ip:\033[1;31m $ip"
