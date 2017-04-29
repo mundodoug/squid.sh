@@ -89,8 +89,7 @@ forwarded_for off
 via off
  
 #Patrocinado pelo @MundoDoug
-# O canal mais amado e odiado do telegram" 
-> /etc/squid/squid.conf
+# O canal mais amado e odiado do telegram" > /etc/squid/squid.conf
 clear
 echo" "
 echo "Aguarde mais um momento para criar um arquivo openvpn"
