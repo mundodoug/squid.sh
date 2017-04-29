@@ -8,7 +8,7 @@ echo "          "
 sleep 1
 echo -e "\033[0;32mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
-read -p ": " ip
+read -p "IP address: " -e -i $IP IP
 clear
 echo -e "\033[0;32m-----> \033[0;32mSeu sistema operacional: Fedora\033[0;32m"
 echo -e "\033[0;32m-----> \033[0;32mSeu ip:\033[0;32m $ip"
