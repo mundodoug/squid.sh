@@ -49,8 +49,7 @@ acl localnet src 100.64.0.0/10          # RFC 6598 espaço de endereço comparti
  
 acl url1 dstdomain -i sdp.vivo.com.br
 acl url2 dstdomain -i ddivulga.com.br
-acl ip dstdomain $IP
-acl iplocal dstdomain 127.0.0.1
+acl ip dstdomain -i $IP
 #
 # INSIRA SUA (S) PRÓPRIA REGRA (S) AQUI PARA PERMITIR O ACESSO DOS SEUS CLIENTES:
 #
