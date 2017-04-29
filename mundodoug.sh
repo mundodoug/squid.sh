@@ -143,7 +143,7 @@ if
 cat /etc/so |grep -i debian 1> /dev/null 2> /dev/null 
 then 
 echo -e "\033[01;37mConfigurando Debian, Aguarde...\033[0m"
-sleep 3
+sleep 8
 apt-get update 
 apt-get install -y squid3 
 rm /etc/squid/squid3.conf
@@ -251,14 +251,14 @@ fi
 
 if cat /etc/so |grep -i ubuntu 1> /dev/null 2> /dev/null ; then
 echo -e "\033[01;37mConfigurando Ubuntu, Aguarde...\033[0m"
-sleep 5
+sleep 8
 apt-get update 
 apt-get install -y squid3 
 rm /etc/squid/squid3.conf
 clear
 cd /etc/squid3
 echo " "
-sleep 5
+sleep 1
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
 #
@@ -315,6 +315,7 @@ via off
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid3/squid.conf
 clear
+sleep 1
 service squid3 restart
 echo " "
 cd
@@ -352,6 +353,7 @@ echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
+echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
 exit 0
 fi
