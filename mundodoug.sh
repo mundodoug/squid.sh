@@ -25,18 +25,14 @@ echo "                                            "
 echo "  "
 sleep 20
 echo " "
-if
-cat /etc/so |grep -i fedora 1> /dev/null 2> /dev/null 
-then
-echo -e "\033[01;37mConfigurando, Aguarde...\033[0m"
-dnf update -y
-dnf install wget -y
-dnf install squid -y
-dnf install nano -y
-dnf install python -y
-dnf install iptables -y
-rm /etc/squid/squid.conf
-clear
+if cat /etc/so |grep -i ubuntu |grep 16 1> /dev/null 2> /dev/null ; then
+echo -e "\033[1;37mConfigurando, Aguarde...\033[0m"
+dnf update -y 1> /dev/null 2> /dev/null
+dnf install squid -y 1> /dev/null 2> /dev/null
+dnf install iptables -y 1> /dev/null 2> /dev/null
+dnf install python -y 1> /dev/null 2> /dev/null
+dnf install nano -y 1> /dev/null 2> /dev/null
+clear 
 cd /etc/squid
 echo " Aguarde Configurando o Squid"
 sleep 2
@@ -95,8 +91,6 @@ via off
  
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid/squid.conf
-exit 0
-fi
 clear
 echo " "
 echo "Aguarde mais um momento para criar um arquivo openvpn"
@@ -137,6 +131,8 @@ echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug[0m"
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+exit 0
+fi
 
 if 
 cat /etc/so |grep -i debian 1> /dev/null 2> /dev/null 
@@ -240,6 +236,8 @@ echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug[0m"
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+exit 0
+fi
 
 if cat /etc/so |grep -i ubuntu 1> /dev/null 2> /dev/null ; then
 echo -e "\033[01;37mConfigurando, Aguarde...\033[0m"
@@ -305,8 +303,6 @@ via off
  
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid3/squid.conf
-exit 0
-fi
 clear
 echo " "
 cd
@@ -343,7 +339,9 @@ echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug \033[0m"
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
-echo " "
+exit 0
+fi
+
 if 
 cat /etc/so |grep -i ubuntu |grep 16 1
 then 
@@ -410,8 +408,6 @@ via off
  
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid/squid.conf
-exit 0
-fi
 clear
 echo " "
 cd
@@ -448,4 +444,5 @@ echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug[0m"
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+exit 0
 fi
