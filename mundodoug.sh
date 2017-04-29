@@ -29,7 +29,7 @@ clear
 cd /etc/squid
 echo -e "\033[0;32mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
-read -p "Digite seu IP?: " IP
+read -p "Qual seu IP?: " IP
 echo " Aguarde Configurando Squid"
 echo " "
 #
@@ -50,19 +50,6 @@ acl url1 dstdomain -i sdp.vivo.com.br
 acl url2 dstdomain -i ddivulga.com.br
 acl ip dstdomain $IP
 acl iplocal dstdomain 127.0.0.1
- 
-acl SSL_ports port 443
-acl Safe_ports port 80          # http
-acl Safe_ports port 21          # ftp
-acl Safe_ports port 443         # https
-acl Safe_ports port 70          # gopher
-acl Safe_ports port 210         # wais
-acl Safe_ports port 280         # http-mgmt
-acl Safe_ports port 488         # gss-http
-acl Safe_ports port 591         # filemaker
-acl Safe_ports port 777         # multiling http
-acl CONNECT method CONNECT
- 
 #
 # INSIRA SUA (S) PRÓPRIA REGRA (S) AQUI PARA PERMITIR O ACESSO DOS SEUS CLIENTES:
 #
