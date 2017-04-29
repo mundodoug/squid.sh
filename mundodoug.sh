@@ -338,3 +338,4 @@ echo "== Para utilizar o Openvpn Multilogin, use o comando ./opendoug.sh =="
 echo "====================================================================="
 echo "====== Entre no meu canal e seja bem vindo t.me/MundoDoug ==========="
 echo "====================================================================="
+fi
