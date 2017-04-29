@@ -8,6 +8,8 @@ echo "==================== FEDORA =============="
 echo "============ DEBIAN======================="
 echo "== UBUNTU == 14 ==== & ===== 16 =========="
 echo "=========================================="
+echo " "
+cat -n /etc/issue |grep 1 |cut -d' ' -f6,7,8 |sed 's/1//' |sed 's/	//' > /etc/so 
 echo -e "\033[0;32mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
 read -p "Qual seu IP?: " IP
