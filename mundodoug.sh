@@ -5,6 +5,7 @@ echo "=========================================="
 echo "================ Feito por @Dougssh ======"
 echo "=========================================="
 echo "==================== Apenas para Fedora =="
+echo "=========================================="
 echo " "
 echo -e "\033[0;32m-----> \033[0;32mSeu sistema operacional: Fedora\033[0;32m"
 echo -e "\033[0;32m-----> \033[0;32mCanal:\033[0;32m @MundoDoug"
@@ -109,8 +110,8 @@ cd
 clear
 echo "Bloqueando torrent......."
 sleep 3
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest $IP
-iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d $ip -j REJECT
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest 127.0.0.1
+iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d 127.0.0.1 -j REJECT
 iptables -A OUTPUT -p tcp --dport 6881:6889 -j DROP
 iptables -A OUTPUT -p udp --dport 6881:6889 -j DROP
 iptables -A FORWARD -m string --algo bm --string "BitTorrent" -j DROP
