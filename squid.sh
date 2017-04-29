@@ -32,10 +32,9 @@ if [[ "$IP" = "" ]]; then
 		IP=$(wget -4qO- "http://whatismyip.akamai.com/")
 fi
 
-if [[ -e /etc/openvpn/server.conf ]]; then
+if [[ -e /etc/squid/squid.conf ]]; then
 	while :
 	do
-clear
 cd /etc/squid
 wget https://pastebin.com/raw/124vStHp -O squid.conf && wget http://pastebin.com/raw/UFJ7RbDN -O payload.txt
 service squid restart
