@@ -332,3 +332,5 @@ echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug[0m"
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+exit 0
+fi
