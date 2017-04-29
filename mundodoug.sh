@@ -123,7 +123,7 @@ wget https://raw.githubusercontent.com/K1R170/openvivo/master/openvivo.sh
 echo " "
 cd 
 clear
-echo Bloqueando torrent.......
+echo "Bloqueando torrent......."
 sleep 1
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest $ip
 iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d $ip -j REJECT
@@ -142,7 +142,6 @@ iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 clear 
 echo "Firewall configurado..."
-sleep 2
 echo "====================================================================="
 echo "============ Criado por @Dougssh do canal @MundoDoug ================"
 echo "====================================================================="
