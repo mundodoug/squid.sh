@@ -30,7 +30,7 @@ echo -e "\033[0;32mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
 read -p "Qual seu IP?: " IP
 echo " Aguarde Configurando Squid"
-sleep 3
+sleep 5
 echo " 
 #
 # Melhor configuração para o seu squid By @Dougssh
@@ -108,7 +108,7 @@ echo " "
 cd 
 clear
 echo "Bloqueando torrent......."
-sleep 1
+sleep 3
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest $ip
 iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d $ip -j REJECT
 iptables -A OUTPUT -p tcp --dport 6881:6889 -j DROP
@@ -125,6 +125,7 @@ iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo "Firewall configurado..."
+echo " "
 sleep 1
 echo "====================================================================="
 echo "============ Criado por @Dougssh do canal @MundoDoug ================"
