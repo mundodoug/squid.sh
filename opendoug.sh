@@ -304,6 +304,7 @@ persist-key
 persist-tun
 status openvpn-status.log
 verb 3
+duplicate-cn
 crl-verify crl.pem" >> /etc/openvpn/server.conf
 	# Enable net.ipv4.ip_forward for the system
 	sed -i '/\<net.ipv4.ip_forward\>/c\net.ipv4.ip_forward=1' /etc/sysctl.conf
@@ -402,7 +403,6 @@ cipher AES-256-CBC
 comp-lzo
 setenv opt block-outside-dns
 key-direction 1
-duplicate-cn
 verb 3" > /etc/openvpn/client-common.txt
 	# Generates the custom client.ovpn
 	newclient "$CLIENT"
