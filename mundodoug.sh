@@ -32,7 +32,7 @@ Digite o ip !\033[0m"
 read -p "Digite seu IP?: " IP
 echo " Aguarde Configurando Squid"
 sleep 3
-echo "
+echo " "
 #
 # Melhor configuração para o seu squid By @Dougssh
 #
