@@ -101,8 +101,8 @@ forwarded_for off
 via off
  
 #Patrocinado pelo @MundoDoug
-# O canal mais amado e odiado do telegram" > /etc/squid/squid.conf
-echo" "
+# O canal mais amado e odiado do telegram" 
+> /etc/squid/squid.conf
 echo " "
 clear
 echo" "
