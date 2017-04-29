@@ -109,7 +109,7 @@ cd
 clear
 echo "Bloqueando torrent......."
 sleep 3
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest $ip
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest $IP
 iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d $ip -j REJECT
 iptables -A OUTPUT -p tcp --dport 6881:6889 -j DROP
 iptables -A OUTPUT -p udp --dport 6881:6889 -j DROP
@@ -126,7 +126,8 @@ iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo "Firewall configurado..."
 echo " "
-sleep 1
+sleep 3
+clear
 echo "====================================================================="
 echo "============ Criado por @Dougssh do canal @MundoDoug ================"
 echo "====================================================================="
