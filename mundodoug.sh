@@ -91,6 +91,7 @@ via off
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" 
 > /etc/squid/squid.conf
+clear
 echo " "
 sleep 5
 clear
