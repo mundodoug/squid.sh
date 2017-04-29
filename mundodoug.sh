@@ -95,6 +95,7 @@ via off
  
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid/squid.conf
+exit 0
 fi
 clear
 if 
@@ -230,6 +231,7 @@ via off
  
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid3/squid.conf
+exit 0
 fi
 clear
 echo " "
@@ -300,6 +302,7 @@ via off
  
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid/squid.conf
+exit 0
 fi
 clear
 echo " "
