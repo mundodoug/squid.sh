@@ -31,7 +31,7 @@ echo -e "\033[0;32mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
 read -p "Digite seu IP?: " IP
 echo " Aguarde Configurando Squid"
-sleep 3
+sleep 1
 echo " "
 #
 # Melhor configuração para o seu squid By @Dougssh
@@ -103,13 +103,12 @@ via off
  
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid/squid.conf
-echo"
-sleep 2
+echo" "
 echo " "
 clear
 echo" "
 echo "Aguarde mais um momento para criar um arquivo openvpn"
-sleep 3
+sleep 2
 echo " "
 cd
 echo ""
