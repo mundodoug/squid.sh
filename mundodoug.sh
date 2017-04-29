@@ -92,6 +92,7 @@ via off
 # O canal mais amado e odiado do telegram" 
 > /etc/squid/squid.conf
 echo " "
+sleep 5
 clear
 echo" "
 echo "Aguarde mais um momento para criar um arquivo openvpn"
