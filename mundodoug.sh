@@ -106,6 +106,7 @@ via off
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid/squid.conf
 echo"
+sleep 4
 .vivo.com.br
 .claro.com.br
 .ddivulga.com.br
@@ -449,7 +450,7 @@ iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 
 echo "Firewall configurado..."
-sleep 1
+sleep 2
 
 echo " "
 cd
