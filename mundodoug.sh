@@ -14,12 +14,12 @@ echo -e "\033[0;32mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
 read -p "Qual seu IP?: " IP
 echo " "
-echo -e "\033[0;32m-----> \033[0;32mSeu sistema operacional:\033[1;31m $(cat /etc/so)"
-echo -e "\033[0;32m-----> \033[0;32mCanal:\033[0;32m @MundoDoug"
-echo -e "\033[0;32m-----> \033[0;32mSQUID NAS PORTAS:\033[1;33m 80, 8080, 8799, 3128\033[0m"
-echo -e "\033[0;32m-----> \033[0;32mSSH NOS IPS: \033[1;31m$IP, localhost, 127.0.0.1\033[0m"
+echo -e "\033[0;32m> \033[0;32mSeu sistema operacional:\033[1;31m $(cat /etc/so)"
+echo -e "\033[0;32m> \033[0;32mCanal:\033[0;32m @MundoDoug"
+echo -e "\033[0;32m> \033[0;32mSQUID NAS PORTAS:\033[1;33m 80, 8080, 8799, 3128\033[0m"
+echo -e "\033[0;32m> \033[0;32mSSH NOS IPS: \033[1;31m$IP, localhost, 127.0.0.1\033[0m"
 echo " "
-echo -e "\033[1;33m-----> \033[1;33mPor favor, aguarde até o fim da instalação dos pacotes[0m"
+echo -e "\033[1;33m> \033[1;33mPor favor, aguarde até o fim da instalação dos pacotes[0m"
 echo ""
 echo "                                            "
 echo "  "
@@ -328,7 +328,6 @@ iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo "Firewall configurado..."
 echo " "
 sleep 3
-clear
 echo "====================================================================="
 echo "============ Criado por @Dougssh do canal @MundoDoug ================"
 echo "====================================================================="
