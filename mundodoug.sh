@@ -23,7 +23,7 @@ echo -e "\033[1;33m> \033[1;33mPor favor, aguarde até o fim da instalação dos
 echo ""
 echo "                                            "
 echo "  "
-sleep 1
+sleep 20
 echo " "
 if
 cat /etc/so |grep -i fedora 1> /dev/null 2> /dev/null 
@@ -39,7 +39,7 @@ rm /etc/squid/squid.conf
 clear
 cd /etc/squid
 echo " Aguarde Configurando o Squid"
-sleep 5
+sleep 2
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
 #
