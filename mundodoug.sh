@@ -36,7 +36,6 @@ dnf install nano -y 1> /dev/null 2> /dev/null
 clear 
 cd /etc/squid
 echo " Aguarde Configurando o Squid"
-sleep 2
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
 #
@@ -150,7 +149,7 @@ rm /etc/squid/squid3.conf
 clear
 cd /etc/squid3
 echo " "
-sleep 5
+sleep 1
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
 #
@@ -318,6 +317,7 @@ clear
 sleep 1
 service squid3 restart
 echo " "
+echo Aguarde.....
 cd
 echo ""
 wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
