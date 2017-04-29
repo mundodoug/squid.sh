@@ -36,6 +36,7 @@ echo " "
 clear
 echo " "
 echo "Aguarde mais um momento para criar um arquivo openvpn"
+sleep 1
 echo " "
 cd
 echo ""
@@ -67,7 +68,7 @@ iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 
-echo Firewall configurado...
+echo "Firewall configurado..."
 sleep 1
 
 echo " "
