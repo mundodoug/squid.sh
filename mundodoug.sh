@@ -31,6 +31,7 @@ rm /etc/squid/squid.conf
 clear
 cd /etc/squid
 wget https://pastebin.com/raw/124vStHp -O squid.conf && wget http://pastebin.com/raw/UFJ7RbDN -O payload.txt
+read -p "IP address: " -e -i $IP IP
 service squid restart
 echo " "
 clear
