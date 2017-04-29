@@ -4,9 +4,8 @@ echo "=== Script Oficial do Canal @MundoDoug ==="
 echo "=========================================="
 echo "================ Feito por @Dougssh ======"
 echo "=========================================="
-echo "          "
-sleep 2
-clear
+echo "==================== Apenas para Fedora =="
+echo " "
 echo -e "\033[0;32m-----> \033[0;32mSeu sistema operacional: Fedora\033[0;32m"
 echo -e "\033[0;32m-----> \033[0;32mCanal:\033[0;32m @MundoDoug"
 echo -e "\033[0;32m-----> \033[0;32mSQUID NAS PORTAS:\033[1;33m 80, 8080, 8799, 3128\033[0m"
@@ -31,7 +30,8 @@ echo -e "\033[0;32mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
 read -p "Qual seu IP?: " IP
 echo " Aguarde Configurando Squid"
-echo " "
+sleep 3
+echo " 
 #
 # Melhor configuração para o seu squid By @Dougssh
 #
