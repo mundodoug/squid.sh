@@ -31,7 +31,6 @@ echo -e "\033[0;32mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
 read -p "Digite seu IP?: " IP
 echo " Aguarde Configurando Squid"
-sleep 1
 echo " "
 #
 # Melhor configuração para o seu squid By @Dougssh
@@ -108,7 +107,6 @@ echo " "
 clear
 echo" "
 echo "Aguarde mais um momento para criar um arquivo openvpn"
-sleep 2
 echo " "
 cd
 echo ""
@@ -139,8 +137,8 @@ iptables -A FORWARD -m string --algo bm --string "info_hash" -j DROP
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
-clear 
 echo "Firewall configurado..."
+sleep 1
 echo "====================================================================="
 echo "============ Criado por @Dougssh do canal @MundoDoug ================"
 echo "====================================================================="
