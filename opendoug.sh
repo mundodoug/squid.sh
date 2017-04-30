@@ -175,11 +175,12 @@ if [[ -e /etc/openvpn/server.conf ]]; then
 	done
 else
 	clear
-	echo "======================================"
+	echo -e "\033[0;32m======================================"
 	echo "OpenVPN Multilogin Criado por @Dougssh"
 	echo "======================================"
 	echo "============ Entre no canal @MundoDoug" 
 	echo "======================================"
+	echo " "
 	# OpenVPN instalador e criação do primeiro usuario
 	echo "Responda as perguntas para iniciar a instalação"
 	echo "Responda corretamente"
@@ -410,5 +411,5 @@ verb 3" > /etc/openvpn/client-common.txt
 	echo "Concluido!"
 	echo ""
 	echo "Seu arquivo está disponivel em" ~/"$CLIENT.ovpn"
-	echo "Para mais opções digite (bash opendoug.sh)!"
+	echo -e "Para mais opções digite (bash opendoug.sh)!\033[0;32m"
 fi
