@@ -372,7 +372,7 @@ exit 0
 fi
 echo " "
 if 
-cat /etc/so |grep -i ubuntu |grep 16 
+cat /etc/so |grep -i ubuntu |grep 16 1> /dev/null 2> /dev/null
 then 
 echo -e "\033[01;37mConfigurando Ubuntu 16, Aguarde...\033[0m"
 apt-get update 
