@@ -21,15 +21,13 @@ echo -e "\033[0;32m> \033[0;32mSSH NOS IPS: \033[1;31m$IP, localhost, 127.0.0.1\
 echo " "
 echo -e "\033[1;33m>Por favor, aguarde até o fim da instalação dos pacotes"
 echo ""
-echo "    "
-echo "  "
+echo " "
 sleep 1
 echo " "
 if 
 cat /etc/so |grep \S 1> /dev/null 2> /dev/null
 then
 echo -e "\033[1;37mConfigurando Fedora, Aguarde...\033[0m"
-sleep 1
 dnf update -y 1> /dev/null 2> /dev/null
 dnf install squid -y 1> /dev/null 2> /dev/null
 dnf install iptables -y 1> /dev/null 2> /dev/null
@@ -37,6 +35,8 @@ dnf install python -y 1> /dev/null 2> /dev/null
 dnf install nano -y 1> /dev/null 2> /dev/null
 clear 
 cd /etc/squid
+sleep 1
+echo " "
 echo " Aguarde Configurando o Squid"
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
@@ -111,7 +111,7 @@ echo " "
 cd 
 clear
 echo "Bloqueando torrent......."
-sleep 3
+sleep 1
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest 127.0.0.1
 iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d 127.0.0.1 -j REJECT
 iptables -A OUTPUT -p tcp --dport 6881:6889 -j DROP
@@ -128,8 +128,8 @@ iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo "Firewall configurado..."
+sleep 1
 echo " "
-sleep 3
 echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
@@ -137,9 +137,10 @@ echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
 echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+echo " "
 exit 0
 fi
-
+echo " "
 if 
 cat /etc/so |grep -i debian 1> /dev/null 2> /dev/null 
 then 
@@ -222,7 +223,7 @@ wget https://raw.githubusercontent.com/K1R170/openvivo/master/openvivo.sh
 echo " "
 cd 
 clear
-sleep 3
+sleep 1
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest 127.0.0.1
 iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d 127.0.0.1 -j REJECT
 iptables -A OUTPUT -p tcp --dport 6881:6889 -j DROP
@@ -247,9 +248,10 @@ echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
 echo " " 
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+echo " " 
 exit 0
 fi
-
+echo " "
 if cat /etc/so |grep -i ubuntu 1> /dev/null 2> /dev/null ; then
 echo -e "\033[01;37mConfigurando Ubuntu, Aguarde...\033[0m"
 sleep 1
@@ -357,11 +359,12 @@ echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
 echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+echo " "
 exit 0
 fi
-
+echo " "
 if 
-cat /etc/so |grep -i ubuntu |grep 16 1
+cat /etc/so |grep -i ubuntu |grep 16 
 then 
 echo -e "\033[01;37mConfigurando Ubuntu 16, Aguarde...\033[0m"
 apt-get update 
@@ -370,7 +373,7 @@ rm /etc/squid/squid.conf
 clear
 cd /etc/squid
 echo " "
-sleep 5
+sleep 1
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
 #
@@ -441,7 +444,7 @@ wget https://raw.githubusercontent.com/K1R170/openvivo/master/openvivo.sh
 echo " "
 cd 
 clear
-sleep 3
+sleep 1
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest 127.0.0.1
 iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d 127.0.0.1 -j REJECT
 iptables -A OUTPUT -p tcp --dport 6881:6889 -j DROP
@@ -458,7 +461,8 @@ iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo " "
-sleep 3
+sleep 1
+echo " "
 echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0m"
 echo " " 
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
@@ -466,5 +470,6 @@ echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
 echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+echo " "
 exit 0
 fi
