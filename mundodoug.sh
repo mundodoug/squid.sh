@@ -133,11 +133,14 @@ sleep 1
 echo " "
 echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0m"
 echo " "
-echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: 
+echo -e "\033[1;33m bash openvivo.sh\033[0m"
 echo " "
-echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando:
+echo -e "\033[1;33m./opendoug.sh\033[0m"
 echo " "
-echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+echo -e "\033[01;31mEntre no meu canal e seja bem vindo:
+echo -e "\033[1;33mt.me/MundoDoug\033[0m"
 echo " "
 exit 0
 fi
@@ -241,15 +244,18 @@ iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo " "
-sleep 3
+sleep 1
 echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0m"
 echo " "
-echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: 
+echo -e "\033[1;33m bash openvivo.sh\033[0m"
 echo " "
-echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
-echo " " 
-echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
-echo " " 
+echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando:
+echo -e "\033[1;33m./opendoug.sh\033[0m"
+echo " "
+echo -e "\033[01;31mEntre no meu canal e seja bem vindo:
+echo -e "\033[1;33mt.me/MundoDoug\033[0m"
+echo " "
 exit 0
 fi
 echo " "
@@ -352,14 +358,17 @@ iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo " "
-sleep 3
+sleep 1
 echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0m"
 echo " "
-echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: 
+echo -e "\033[1;33m bash openvivo.sh\033[0m"
 echo " "
-echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando:
+echo -e "\033[1;33m./opendoug.sh\033[0m"
 echo " "
-echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+echo -e "\033[01;31mEntre no meu canal e seja bem vindo:
+echo -e "\033[1;33mt.me/MundoDoug\033[0m"
 echo " "
 exit 0
 fi
@@ -465,12 +474,15 @@ echo " "
 sleep 1
 echo " "
 echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0m"
-echo " " 
-echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
 echo " "
-echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando ./opendoug.sh\033[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: 
+echo -e "\033[1;33m bash openvivo.sh\033[0m"
 echo " "
-echo -e "\033[01;31mEntre no meu canal e seja bem vindo t.me/MundoDoug\033[0m"
+echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando:
+echo -e "\033[1;33m./opendoug.sh\033[0m"
+echo " "
+echo -e "\033[01;31mEntre no meu canal e seja bem vindo:
+echo -e "\033[1;33mt.me/MundoDoug\033[0m"
 echo " "
 exit 0
 fi
