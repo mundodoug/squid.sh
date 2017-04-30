@@ -144,7 +144,7 @@ echo -e "\033[01;31mEntre no meu canal e seja bem vindo:\033[01;31m"
 echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 exit 0
 fi
-echo " "
+PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 if 
 cat /etc/so |grep -i debian 1> /dev/null 2> /dev/null 
 then 
@@ -255,7 +255,7 @@ echo -e "\033[01;31mEntre no meu canal e seja bem vindo:\033[01;31m"
 echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 exit 0
 fi
-echo " "
+PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 if cat /etc/so |grep -i ubuntu 1> /dev/null 2> /dev/null ; then
 echo -e "\033[01;37mConfigurando Ubuntu, Aguarde...\033[01;37m"
 sleep 1
@@ -366,7 +366,7 @@ echo -e "\033[01;31mEntre no meu canal e seja bem vindo:\033[01;31m"
 echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 exit 0
 fi
-echo " "
+PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 if 
 cat /etc/so |grep -i Ubuntu 16 1> /dev/null 2> /dev/null 
 then
@@ -477,3 +477,4 @@ echo -e "\033[01;31mEntre no meu canal e seja bem vindo:\033[01;31m"
 echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 exit 0
 fi
+PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
