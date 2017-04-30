@@ -40,12 +40,12 @@ clear
 cd /etc/squid
 sleep 1
 echo " "
-echo " Aguarde Enquanto configuro o seu squid"
+echo " Aguarde Enquanto configuro o seu squid ..."
 echo " "
-echo "."
-echo ".."
-echo "..............."
-echo "..................................."
+echo " "
+echo " "
+echo " "
+echo " "
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
 #
