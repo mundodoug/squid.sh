@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo -e "\033[0;32m=========================================="
 echo "=== Script Oficial do Canal @MundoDoug ==="
 echo "=========================================="
