@@ -26,7 +26,7 @@ echo "  "
 sleep 1
 echo " "
 if 
-cat /etc/so |grep -i fedora |grep fedora 1> /dev/null 2> /dev/null
+cat /etc/so |grep fedora 1> /dev/null 2> /dev/null
 then
 echo -e "\033[1;37mConfigurando Fedora, Aguarde...\033[0m"
 sleep 1
