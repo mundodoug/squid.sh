@@ -263,12 +263,15 @@ exit 0
 fi
 if cat /etc/so |grep -i ubuntu 1> /dev/null 2> /dev/null ; then
 echo -e "\033[01;37mConfigurando Ubuntu, Aguarde...\033[01;37m"
-sleep 1
+sleep 3
 apt-get update 
+apt install -y squid 
 apt-get install -y squid3 
-rm /etc/squid/squid3.conf
+rm /etc/squid/squid.conf
+rm /etc/squid3/squid.conf
 clear
 cd /etc/squid3
+cd /etc/squid
 echo " "
 sleep 1
 echo " 
@@ -471,6 +474,7 @@ echo " "
 clear
 sleep 1
 echo " "
+clear
 cho -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0;32m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando:\033[01;31m" 
