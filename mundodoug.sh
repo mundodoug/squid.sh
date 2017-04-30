@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "=========================================="
+echo -e "\033[0;32m=========================================="
 echo "=== Script Oficial do Canal @MundoDoug ==="
 echo "=========================================="
 echo "================ Feito por @Dougssh ======"
@@ -7,7 +7,7 @@ echo "=========================================="
 echo "==================== FEDORA =============="
 echo "============ DEBIAN======================="
 echo "== UBUNTU == 14 ==== & ===== 16 =========="
-echo "=========================================="
+echo -e "==========================================\033[0;32m"
 echo " "
 cat -n /etc/issue |grep 1 |cut -d' ' -f6,7,8 |sed 's/1//' |sed 's/	//' > /etc/so 
 echo -e "\033[0;32mPara a instalação ser correta é preciso o ip.
@@ -19,15 +19,15 @@ echo -e "\033[0;32m> \033[0;32mCanal:\033[0;32m @MundoDoug"
 echo -e "\033[0;32m> \033[0;32mSQUID NAS PORTAS:\033[1;33m 80, 8080, 8799, 3128\033[0m"
 echo -e "\033[0;32m> \033[0;32mSSH NOS IPS: \033[1;31m$IP, localhost, 127.0.0.1\033[0m"
 echo " "
-echo -e "\033[1;33m> \033[1;33mPor favor, aguarde até o fim da instalação dos pacotes"
+echo -e "\033[1;33m>Por favor, aguarde até o fim da instalação dos pacotes"
 echo ""
 echo "    "
 echo "  "
-sleep 5
+sleep 1
 echo " "
-if cat /etc/so |grep -i ubuntu |fedora 1> /dev/null 2> /dev/null ; then
+if cat /etc/so |grep -i fedora 1> /dev/null 2> /dev/null ; then
 echo -e "\033[1;37mConfigurando Fedora, Aguarde...\033[0m"
-sleep 8
+sleep 1
 dnf update -y 1> /dev/null 2> /dev/null
 dnf install squid -y 1> /dev/null 2> /dev/null
 dnf install iptables -y 1> /dev/null 2> /dev/null
@@ -128,7 +128,7 @@ iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo "Firewall configurado..."
 echo " "
 sleep 3
-echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug \033[0m"
+echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
 echo " "
@@ -142,7 +142,7 @@ if
 cat /etc/so |grep -i debian 1> /dev/null 2> /dev/null 
 then 
 echo -e "\033[01;37mConfigurando Debian, Aguarde...\033[0m"
-sleep 8
+sleep 1
 apt-get update 
 apt-get install -y squid3 
 rm /etc/squid/squid3.conf
@@ -238,7 +238,7 @@ iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo " "
 sleep 3
-echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug \033[0m"
+echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
 echo " "
@@ -250,7 +250,7 @@ fi
 
 if cat /etc/so |grep -i ubuntu 1> /dev/null 2> /dev/null ; then
 echo -e "\033[01;37mConfigurando Ubuntu, Aguarde...\033[0m"
-sleep 8
+sleep 1
 apt-get update 
 apt-get install -y squid3 
 rm /etc/squid/squid3.conf
@@ -348,7 +348,7 @@ iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo " "
 sleep 3
-echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug \033[0m"
+echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
 echo " "
@@ -457,7 +457,7 @@ iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo " "
 sleep 3
-echo -e "\033[1;37mCriado por @Dougssh do canal @MundoDoug \033[0m"
+echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0m"
 echo " " 
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando: bash openvivo.sh\033[0m"
 echo " "
