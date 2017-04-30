@@ -15,6 +15,8 @@ echo -e "\033[0;32mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
 read -p "Qual seu IP?: " IP
 echo " "
+                        echo " "
+            echo " "            
 echo -e "\033[0;32m> \033[0;32mSeu sistema operacional:\033[1;31m $(cat /etc/so)"
 echo -e "\033[0;32m> \033[0;32mCanal:\033[0;32m @MundoDoug"
 echo -e "\033[0;32m> \033[0;32mSQUID NAS PORTAS:\033[1;33m 80, 8080, 8799, 3128\033[0m"
@@ -93,7 +95,6 @@ via off
  
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid/squid.conf
-clear
 service squid restart
 echo " "
 echo "Aguarde mais um momento para criar um arquivo openvpn"
@@ -104,7 +105,6 @@ wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
 chmod u+x opendoug.sh
 echo " "
 cd
-clear
 echo " "
 wget https://raw.githubusercontent.com/K1R170/openvivo/master/openvivo.sh
 echo " "
@@ -210,7 +210,6 @@ via off
  
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid3/squid.conf
-clear
 service squid3 restart
 echo " "
 cd
@@ -219,7 +218,6 @@ wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
 chmod u+x opendoug.sh
 echo " "
 cd
-clear
 echo " "
 wget https://raw.githubusercontent.com/K1R170/openvivo/master/openvivo.sh
 echo " "
@@ -322,7 +320,6 @@ via off
  
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid3/squid.conf
-clear
 sleep 1
 service squid3 restart
 echo " "
@@ -333,12 +330,10 @@ wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
 chmod u+x opendoug.sh
 echo " "
 cd
-clear
 echo " "
 wget https://raw.githubusercontent.com/K1R170/openvivo/master/openvivo.sh
 echo " "
 cd 
-clear
 sleep 3
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest 127.0.0.1
 iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d 127.0.0.1 -j REJECT
@@ -437,7 +432,6 @@ via off
  
 #Patrocinado pelo @MundoDoug
 # O canal mais amado e odiado do telegram" > /etc/squid/squid.conf
-clear
 service squid restart
 echo " "
 cd
@@ -446,12 +440,10 @@ wget https://raw.githubusercontent.com/mundodoug/squid.sh/master/opendoug.sh
 chmod u+x opendoug.sh
 echo " "
 cd
-clear
 echo " "
 wget https://raw.githubusercontent.com/K1R170/openvivo/master/openvivo.sh
 echo " "
 cd 
-clear
 sleep 1
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 6881:6889 -j DNAT --to-dest 127.0.0.1
 iptables -A FORWARD -p tcp -i eth0 --dport 6881:6889 -d 127.0.0.1 -j REJECT
