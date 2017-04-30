@@ -128,18 +128,19 @@ iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo "Firewall configurado..."
+clear
 sleep 1
 echo " "
-echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0;32m[0m"
+echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0;32m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando:\033[01;31m" 
-echo -e "\033[1;33m bash openvivo.sh\033[1;33m[0m"
+echo -e "\033[1;33m bash openvivo.sh\033[1;33m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando:\033[01;31m"
-echo -e "\033[1;33m./opendoug.sh\033[1;33m[0m"
+echo -e "\033[1;33m./opendoug.sh\033[1;33m"
 echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo:\033[01;31m"
-echo -e "\033[1;33mt.me/MundoDoug\033[1;33m[0m"
+echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 exit 0
 fi
 echo " "
@@ -241,22 +242,23 @@ iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo " "
+clear
 sleep 1
-cho -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0;32m[0m"
+cho -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0;32m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando:\033[01;31m" 
-echo -e "\033[1;33m bash openvivo.sh\033[1;33m[0m"
+echo -e "\033[1;33m bash openvivo.sh\033[1;33m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando:\033[01;31m"
-echo -e "\033[1;33m./opendoug.sh\033[1;33m[0m"
+echo -e "\033[1;33m./opendoug.sh\033[1;33m"
 echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo:\033[01;31m"
-echo -e "\033[1;33mt.me/MundoDoug\033[1;33m[0m"
+echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 exit 0
 fi
 echo " "
 if cat /etc/so |grep -i ubuntu 1> /dev/null 2> /dev/null ; then
-echo -e "\033[01;37mConfigurando Ubuntu, Aguarde...\033[0m"
+echo -e "\033[01;37mConfigurando Ubuntu, Aguarde...\033[01;37m"
 sleep 1
 apt-get update 
 apt-get install -y squid3 
@@ -354,17 +356,18 @@ iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo " "
+clear
 sleep 1
-cho -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0;32m[0m"
+cho -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0;32m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando:\033[01;31m" 
-echo -e "\033[1;33m bash openvivo.sh\033[1;33m[0m"
+echo -e "\033[1;33m bash openvivo.sh\033[1;33m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando:\033[01;31m"
-echo -e "\033[1;33m./opendoug.sh\033[1;33m[0m"
+echo -e "\033[1;33m./opendoug.sh\033[1;33m"
 echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo:\033[01;31m"
-echo -e "\033[1;33mt.me/MundoDoug\033[1;33m[0m"
+echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 exit 0
 fi
 echo " "
@@ -466,17 +469,18 @@ iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
 iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
 echo " "
+clear
 sleep 1
 echo " "
-cho -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0;32m[0m"
+cho -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0;32m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando:\033[01;31m" 
-echo -e "\033[1;33m bash openvivo.sh\033[1;33m[0m"
+echo -e "\033[1;33m bash openvivo.sh\033[1;33m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Multilogin, use o comando:\033[01;31m"
-echo -e "\033[1;33m./opendoug.sh\033[1;33m[0m"
+echo -e "\033[1;33m./opendoug.sh\033[1;33m"
 echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo:\033[01;31m"
-echo -e "\033[1;33mt.me/MundoDoug\033[1;33m[0m"
+echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 exit 0
 fi
