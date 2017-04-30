@@ -380,6 +380,7 @@ echo " "
 apt-get update 1> /dev/null 2> /dev/null
 apt-get install -y squid 1> /dev/null 2> /dev/null
 apt-get install -y nano
+rm /etc/squid/squid.conf
 cd /etc/squid
 echo " "
 sleep 1
