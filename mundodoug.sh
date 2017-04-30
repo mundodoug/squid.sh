@@ -22,7 +22,6 @@ echo -e "\033[0;32m> \033[0;32mSSH NOS IPS: \033[1;31m$IP, localhost, 127.0.0.1\
 echo " "
 echo -e "\033[1;33m>Por favor, aguarde até o fim da instalação dos pacotes"
 echo ""
-echo " "
 sleep 1
 echo " "
 if 
@@ -85,7 +84,7 @@ coredump_dir /var/spool/squid
 #
 refresh_pattern ^ftp:           1440    20%     10080
 refresh_pattern ^gopher:        1440    0%      1440
-#refresh_pattern -i (/cgi-bin/|\?) 0     0%      0
+refresh_pattern -i (/cgi-bin/|\?) 0     0%      0
 refresh_pattern .               0       20%     4320
  
 #Torne-se anônimo
@@ -141,7 +140,6 @@ echo -e "\033[1;33m./opendoug.sh\033[0m"
 echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo:
 echo -e "\033[1;33mt.me/MundoDoug\033[0m"
-echo " "
 exit 0
 fi
 echo " "
@@ -203,7 +201,7 @@ http_port 8799
 #
 refresh_pattern ^ftp:           1440    20%     10080
 refresh_pattern ^gopher:        1440    0%      1440
-#refresh_pattern -i (/cgi-bin/|\?) 0     0%      0
+refresh_pattern -i (/cgi-bin/|\?) 0     0%      0
 refresh_pattern .               0       20%     4320
  
 #Torne-se anônimo
@@ -255,7 +253,6 @@ echo -e "\033[1;33m./opendoug.sh\033[0m"
 echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo:
 echo -e "\033[1;33mt.me/MundoDoug\033[0m"
-echo " "
 exit 0
 fi
 echo " "
@@ -315,7 +312,7 @@ http_port 8799
 #
 refresh_pattern ^ftp:           1440    20%     10080
 refresh_pattern ^gopher:        1440    0%      1440
-#refresh_pattern -i (/cgi-bin/|\?) 0     0%      0
+refresh_pattern -i (/cgi-bin/|\?) 0     0%      0
 refresh_pattern .               0       20%     4320
  
 #Torne-se anônimo
@@ -369,7 +366,6 @@ echo -e "\033[1;33m./opendoug.sh\033[0m"
 echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo:
 echo -e "\033[1;33mt.me/MundoDoug\033[0m"
-echo " "
 exit 0
 fi
 echo " "
@@ -483,6 +479,5 @@ echo -e "\033[1;33m./opendoug.sh\033[0m"
 echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo:
 echo -e "\033[1;33mt.me/MundoDoug\033[0m"
-echo " "
 exit 0
 fi
