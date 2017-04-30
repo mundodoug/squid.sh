@@ -260,7 +260,7 @@ echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 exit 0
 fi
-if cat /etc/so |grep -i ubuntu 14 1> /dev/null 2> /dev/null ; then
+if cat /etc/so |grep -i ubuntu 1> /dev/null 2> /dev/null ; then
 echo -e "\033[01;37mConfigurando Ubuntu, Aguarde...\033[01;37m"
 echo " "
 sleep 3
@@ -485,9 +485,10 @@ echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 exit 0
 fi
-cat /etc/so |grep ubuntu -i 1> /dev/null 2> /dev/null 
+if
+cat /etc/so |grep ubuntu 17 -i 1> /dev/null 2> /dev/null 
 then
-echo -e "\033[1;37mConfigurando Ubuntu 16, Aguarde...\033[0m"
+echo -e "\033[1;37mConfigurando Ubuntu 17, Aguarde...\033[0m"
 echo " "
 apt-get update 1> /dev/null 2> /dev/null
 apt-get install -y squid 1> /dev/null 2> /dev/null
