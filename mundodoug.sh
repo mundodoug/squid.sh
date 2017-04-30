@@ -371,12 +371,14 @@ echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 exit 0
 fi
 echo " "
-if cat /etc/so |grep -i Ubuntu 16 1> /dev/null 2> /dev/null ; then
+if 
+cat /etc/so |grep -i Ubuntu 16 1> /dev/null 2> /dev/null 
+then
 echo -e "\033[1;37mConfigurando Ubuntu 16, Aguarde...\033[0m"
+echo " "
 apt-get update 1> /dev/null 2> /dev/null
 apt-get install -y squid 1> /dev/null 2> /dev/null
 apt-get install -y nano
-clear
 cd /etc/squid
 echo " "
 sleep 1
