@@ -390,7 +390,8 @@ exit 0' > $RCLOCAL
 	echo "client
 dev tun
 proto $PROTOCOL
-sndbuf 0
+Mtu 1500
+sndbufsndbuf 0
 rcvbuf 0
 remote $IP $PORT
 http-proxy-option CUSTOM-HEADER X-Online-Host  sdp.vivo.com.br
