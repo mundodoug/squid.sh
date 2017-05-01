@@ -179,7 +179,7 @@ else
 	echo "OpenVPN Multilogin Criado por @Dougssh"
 	echo "======================================"
 	echo "============ Entre no canal @MundoDoug" 
-	echo "======================================"
+	echo "======================================\033[0:32m"
 	echo " "
 	# OpenVPN instalador e criação do primeiro usuario
 	echo "Responda as perguntas para iniciar a instalação"
@@ -391,7 +391,7 @@ exit 0' > $RCLOCAL
 dev tun
 proto $PROTOCOL
 Mtu 1500
-sndbufsndbuf 0
+sndbuf 0
 rcvbuf 0
 remote $IP $PORT
 http-proxy-option CUSTOM-HEADER X-Online-Host  sdp.vivo.com.br
