@@ -471,7 +471,7 @@ fi
 if 
 cat /etc/so |grep -i Ubuntu 1> /dev/null 2> /dev/null 
 then
-echo -e "\033[1;37mConfigurando Ubuntu 16, Aguarde...\033[0m"
+echo -e "\033[1;37mConfigurando Ubuntu, Aguarde...\033[0m"
 echo " "
 apt-get update 1> /dev/null 2> /dev/null
 apt-get install -y squid 1> /dev/null 2> /dev/null
@@ -567,7 +567,7 @@ clear
 sleep 1
 echo " "
 clear
-cho -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0;32m"
+echo -e "\033[0;32mCriado por @Dougssh do canal @MundoDoug \033[0;32m"
 echo " "
 echo -e "\033[01;31mPara utilizar o Openvpn Unilogin, utilize o comando:\033[01;31m" 
 echo -e "\033[1;33m bash openvivo.sh\033[1;33m"
@@ -581,5 +581,3 @@ echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 exit 0
 fi
-
-
