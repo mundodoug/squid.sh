@@ -468,17 +468,11 @@ echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 exit 0
 fi
-if 
-cat /etc/so |grep -i Ubuntu 1> /dev/null 2> /dev/null 
-then
-echo -e "\033[1;37mConfigurando Ubuntu, Aguarde...\033[0m"
-echo " "
+if cat /etc/so |grep -i ubuntu 1> /dev/null 2> /dev/null ; then
+echo -e "\033[1;37mConfigurando, Aguarde...\033[0m"
 apt-get update 1> /dev/null 2> /dev/null
-apt-get install -y squid 1> /dev/null 2> /dev/null
-apt-get install -y nano
-rm /etc/squid/squid.conf
-cd /etc/squid
-echo " "
+apt-get install -y squid3 1> /dev/null 2> /dev/null
+
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
 #
