@@ -371,7 +371,7 @@ PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 exit 0
 fi
 if 
-cat /etc/so |grep -i Ubuntu 16 1> /dev/null 2> /dev/null 
+cat /etc/so |grep -i Ubuntu 16.04.2 LTS 1> /dev/null 2> /dev/null 
 then
 echo -e "\033[1;37mConfigurando Ubuntu 16, Aguarde...\033[0m"
 echo " "
