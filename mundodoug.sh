@@ -258,7 +258,7 @@ echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
 PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 exit 0
 fi
-if cat /etc/so |grep -i ubuntu 1> /dev/null 2> /dev/null ; then
+if cat /etc/so |grep -i ubuntu 14 1> /dev/null 2> /dev/null ; then
 echo -e "\033[01;37mConfigurando Ubuntu, Aguarde...\033[01;37m"
 echo " "
 
@@ -483,7 +483,7 @@ PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 exit 0
 fi
 if
-cat /etc/so |grep ubuntu -i 1> /dev/null 2> /dev/null 
+cat /etc/so |grep ubuntu 17.04 -i 1> /dev/null 2> /dev/null 
 then
 echo -e "\033[1;37mConfigurando Ubuntu, Aguarde...\033[0m"
 echo " "
