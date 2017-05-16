@@ -25,7 +25,6 @@ echo -e "\033[0;32m> \033[0;32mSSH NOS IPS: \033[1;31m$IP, localhost, 127.0.0.1\
 echo " "
 echo -e "\033[1;33m>Por favor, aguarde até o fim da instalação dos pacotes"
 echo ""
-sleep 1
 echo " "
 if 
 cat /etc/so |grep \S 1> /dev/null 2> /dev/null
@@ -154,13 +153,12 @@ if
 cat /etc/so |grep -i debian 1> /dev/null 2> /dev/null 
 then 
 echo -e "\033[01;37mConfigurando Debian, Aguarde...\033[0m"
-sleep 1
+
 apt-get update 
 apt-get install -y squid3 
 clear
 cd /etc/squid3
 echo " "
-sleep 1
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
 #
@@ -263,14 +261,14 @@ fi
 if cat /etc/so |grep -i ubuntu 1> /dev/null 2> /dev/null ; then
 echo -e "\033[01;37mConfigurando Ubuntu, Aguarde...\033[01;37m"
 echo " "
-sleep 3
+
 apt-get update 
 apt-get install -y squid3
 clear
 cd /etc/squid3
 rm /etc/squid3/squid.conf
 echo " "
-sleep 1
+
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
 #
@@ -373,7 +371,7 @@ PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 exit 0
 fi
 if 
-cat /etc/so |grep -i Ubuntu 16 |grep -i Ubuntu 17 1> /dev/null 2> /dev/null 
+cat /etc/so |grep -i Ubuntu 16 1> /dev/null 2> /dev/null 
 then
 echo -e "\033[1;37mConfigurando Ubuntu 16, Aguarde...\033[0m"
 echo " "
@@ -383,7 +381,6 @@ apt-get install -y nano
 rm /etc/squid/squid.conf
 cd /etc/squid
 echo " "
-sleep 1
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
 #
@@ -496,7 +493,6 @@ apt-get install -y nano
 rm /etc/squid/squid.conf
 cd /etc/squid
 echo " "
-sleep 1
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
 #
