@@ -8,7 +8,7 @@ echo "================ Feito por @Dougssh ======"
 echo "=========================================="
 echo "==================== FEDORA =============="
 echo "============ DEBIAN======================="
-echo "== UBUNTU == 14 ==== & ===== 16 =========="
+echo "== UBUNTU == 12 ==== 14 ===== 16  == 17 =="
 echo -e "==========================================\033[0;32m"
 echo " "
 cat -n /etc/issue |grep 1 |cut -d' ' -f6,7,8 |sed 's/1//' |sed 's/	//' > /etc/so 
@@ -262,6 +262,7 @@ if cat /etc/so |grep -i ubuntu |grep 16 1> /dev/null 2> /dev/null ; then
 echo -e "\033[1;37mConfigurando, Aguarde...\033[0m"
 apt-get update 1> /dev/null 2> /dev/null
 apt-get install -y squid3 1> /dev/null 2> /dev/null
+cd /etc/squid
 
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
@@ -314,10 +315,8 @@ refresh_pattern .               0       20%     4320
  
 #Torne-se anônimo
 forwarded_for off
-via off
- 
-#Patrocinado pelo @MundoDoug
-# O canal mais amado e odiado do telegram" > /etc/squid3/squid.conf
+via off > /etc/squid3/squid.conf
+
 sleep 1
 service squid3 restart
 echo " "
@@ -367,7 +366,8 @@ fi
 if cat /etc/so |grep -i ubuntu |grep 17 1> /dev/null 2> /dev/null ; then
 echo -e "\033[1;37mConfigurando, Aguarde...\033[0m"
 apt-get update 1> /dev/null 2> /dev/null
-apt-get install -y squid3 1> /dev/null 2> /dev/null
+apt-get install -y squid 1> /dev/null 2> /dev/null
+cd /etc/squid 
 
 echo " 
 # Melhor configuração para o seu squid By @Dougssh
@@ -420,12 +420,10 @@ refresh_pattern .               0       20%     4320
  
 #Torne-se anônimo
 forwarded_for off
-via off
- 
-#Patrocinado pelo @MundoDoug
-# O canal mais amado e odiado do telegram" > /etc/squid3/squid.conf
+via off > /etc/squid3/squid.conf
+
 sleep 1
-service squid3 restart
+service squid restart
 echo " "
 echo Aguarde.....
 cd
@@ -471,7 +469,7 @@ PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 exit 0
 fi
 if 
-cat /etc/so |grep -i Ubuntu LTS 1> /dev/null 2> /dev/null 
+cat /etc/so |grep -i Ubuntu 1> /dev/null 2> /dev/null 
 then
 echo -e "\033[1;37mConfigurando Ubuntu 16, Aguarde...\033[0m"
 echo " "
@@ -579,6 +577,7 @@ echo -e "\033[1;33m./opendoug.sh\033[1;33m"
 echo " "
 echo -e "\033[01;31mEntre no meu canal e seja bem vindo:\033[01;31m"
 echo -e "\033[1;33mt.me/MundoDoug\033[1;33m"
+
 PS1="\[\e[0;32m\][\t] => \[\e[0m\]"
 exit 0
 fi
